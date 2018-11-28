@@ -1,0 +1,367 @@
+body, {
+  margin:0;
+  padding:0;
+}
+.welcomePage {
+  width: 100vw;
+}
+input:focus,input:active {
+  outline: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* WELCOME SCREEN */
+  #welcomeLogo {
+    width: 100%;
+    margin-top: 5%;
+  }
+  #welcomeTitle {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #openBtn {
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 50%;
+    margin-left: 10%;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    width: 80%;
+  }
+
+  /* HOTEL SELECTION SCREEN */
+  #hotel_selection_header {
+    height: 10%;
+    width: 100%;
+    background-color: #171717;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  #hotel_selection_title {
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3.5%;
+  }
+
+  #hotel-list {
+    overflow: scroll;
+    margin-top: 15%;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .hotelList {
+    margin-top: 5%;
+    height: 75px;
+  }
+  .hotelList:hover .hotel_name {
+    color: white;
+    background-color: #4189FF;
+    border-color: #4189FF;
+  }
+  .hotel_name {
+    margin-left: 3%;
+    border-top: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    height: 75px;
+  }
+  .hotel_name p {
+    margin-top: 20%;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+  }
+  .hotel_site {
+    background-size: contain;
+    border-radius: 7px;
+  }
+  #selectHotelBtn {
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid #525456;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-size: 1.75em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    width: 50%;
+    color: #525456;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  /* FIND RESERVATION */
+  #find_reservation_header {
+    margin-top: 2%;
+  }
+  i {
+    color: #525456;
+    margin-left: 3%;
+  }
+  #backButton:hover {
+    color: #4189FF;
+  }
+
+  #find_reservation_title {
+    font-weight: bold;
+    margin-top: 40%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  #reservationID {
+    margin-top: 9%;
+    padding: 2%;
+    border: 1px solid #525456;
+    color: #525456;
+    border-radius: 7px;
+    font-size: 1.35em;
+    margin-left: 20%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  #findReservation,#goHome {
+    border-radius: 7px;
+    background-color: #4189FF;
+    margin-top: 15%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
+    width: 50%;
+    text-align: center;
+  }
+  #find_reservation_footer_desc {
+    font-style: italic;
+    text-align: center;
+    color: #525456;
+  }
+  .searchArea {
+    display: flex;
+    justify-content: center;
+  }
+
+  #reservationID::placeholder {
+    color: #525456;
+  }
+  .formInvalid::placeholder {
+    color: red;
+  }
+  .formValid::placeholder {
+    color: #1FCC08;
+  }
+  #home_icon {
+    margin-left: 5%;
+  }
+xsx
+  /* HOME */
+  #home_header {
+    background-color: #171717;
+  }
+  #home_title {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2%;
+    letter-spacing: 15px;
+  }
+  #bars {
+    color:white;
+  }
+  #chatbot_title {
+    color:#525456;
+  }
+  /* --------------
+
+    TESTING SIDEBAR
+
+    ---------------*/
+  #sidebarCollapse {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    margin-top: 10%;
+  }
+  #sidebarCollapse:hover {
+    color: #537EA6;
+    background-color: transparent;
+  }
+  #sidebar.active ~ #content #sidebarCollapse{
+    display: none;
+  }
+  .sidebar-header{
+    /* height: 100px; */
+    background-color: #171717;
+  }
+  #sidebar_logo {
+    height: auto;
+    width: 100%;
+  }
+  #accountHolder {
+    color: white;
+    text-align: left;
+    padding-top: 5%;
+  }
+  #sidebar {
+      width: 250px;
+      position: absolute;
+      top: 0;
+      left: -250px;
+      height: 100vh;
+      z-index: 999;
+      background: white;
+      color: #fff;
+      transition: all 0.3s;
+      overflow-y: hidden;
+      padding-left: 0;
+      /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); */
+  }
+
+  #sidebar.active {
+      left: 0;
+      z-index: 1010;
+  }
+  .sidebar-footer{
+    height: 42%;
+    bottom: 0;
+  }
+  #dismiss {
+      position: relative;
+      background: transparent;
+      color: #537EA6;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+
+  #dismiss:hover {
+    color: #ffc000;
+  }
+
+
+  .overlay {
+      display: none;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 998;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+  }
+  .overlay.active {
+      display: block;
+      opacity: 1;
+  }
+
+  a[data-toggle="collapse"] {
+      position: relative;
+  }
+
+  .dropdown-toggle::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+  }
+
+  #content {
+      width: 100%;
+      min-height: 100vh;
+      transition: all 0.3s;
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+  #hubLinks{
+    height: 50%;
+    list-style:none;
+    padding-top: 5px;
+    margin-bottom: 0;
+    padding-left: 3px;
+  }
+  #hubLinks img {
+    margin-right: 5%;
+  }
+  #hubLinks li {
+    color: #525456;
+    height: 50px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: .75s;
+  }
+
+  #hubLinks li:hover a > .sidebarIcons{
+    color: #ffc000;
+  }
+  #hubLinks li:hover a{
+    color: black;
+  }
+  #hubLinks li a{
+    text-decoration: none;
+    padding-left:3px;
+    padding-right:3px;
+    color: #525456;
+  }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* WELCOME SCREEN */
+  #welcomeLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5%;
+  }
+  #welcomeTitle {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #openBtn {
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 25%;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    width: 50%;
+  }
+
+  /* HOTEL SELECTION SCREEN */
+}
